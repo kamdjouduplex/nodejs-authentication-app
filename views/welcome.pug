@@ -1,0 +1,11 @@
+extends layouts/main.pug
+
+block content  
+    div.container.py-5
+            .row
+                div.col-md-6.m-auto.jumbotron
+                    h1 Welcome to my NodeJS App
+                    p this is a simple nodejs app with the pug template and authentication system included
+                    br
+                    a.mr-5(href="/user/login") Login
+                    a(href="/user/register") Register

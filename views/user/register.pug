@@ -1,0 +1,24 @@
+extends ../layouts/main.pug
+
+block content
+    div.container.py-5
+            .row
+                div.col-md-6.m-auto
+                    div.card.p-5
+                        h1=title
+                        form(action="/user/register", method="POST")
+                            .form-group
+                                label(for='name') Name:
+                                input(type='name', class='form-control', placeholder='Enter your name', id='name', name="name")
+                            .form-group
+                                label(for='email') Email:
+                                input(type='email', class='form-control', placeholder='Enter your email', id='email', name="email")
+                            .form-group
+                                label(for='password') Password:
+                                input(type='password', class='form-control', placeholder='Enter your password', id='password', name="password")
+                            .form-group
+                                label(for='cpassword') Confirm Password:
+                                input(type='password', class='form-control', placeholder='Enter your confirm password', id='cpassword', name="cpassword")
+
+                            button.btn.btn-primary(type="submit") Register Now
+                            a.float-right(href="/") Back Home

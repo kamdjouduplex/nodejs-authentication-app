@@ -1,0 +1,13 @@
+extends ../layouts/main.pug
+
+block content  
+    div.container.py-5
+            .row
+                div.col-md-6.m-auto.jumbotron
+                    h1 Great Job!
+                    p 
+                        strong=name
+                        =' You are now a user.'
+                    br
+                    a.mr-5(href="/user/logout") Logout
+                    
